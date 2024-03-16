@@ -2,7 +2,7 @@
 
 paramgaming-bot is a Node.js script designed to interact with the Param Gaming API to fetch tasks, clear them, and claim rewards automatically.
 
-# Register
+## Register
 
 Here is the link: https://paramgaming.com/?referCode=6C0ADF94FB#/signup
 
