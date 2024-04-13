@@ -1,135 +1,137 @@
-const _0x19556b = _0x351a;
-(function (_0x306c84, _0x8d0e7a) {
-  const _0x384a2d = _0x351a,
-    _0x23a82d = _0x306c84();
+const _0x1e62b4 = _0x5dd1;
+(function (_0x40b1c7, _0x39fa19) {
+  const _0x7f1faa = _0x5dd1,
+    _0x484bd9 = _0x40b1c7();
   while (!![]) {
     try {
-      const _0x45baa1 =
-        (-parseInt(_0x384a2d(0xa6)) / 0x1) * (parseInt(_0x384a2d(0xa9)) / 0x2) +
-        (-parseInt(_0x384a2d(0x97)) / 0x3) * (parseInt(_0x384a2d(0x9e)) / 0x4) +
-        (-parseInt(_0x384a2d(0x9f)) / 0x5) * (parseInt(_0x384a2d(0x8e)) / 0x6) +
-        (parseInt(_0x384a2d(0x90)) / 0x7) * (-parseInt(_0x384a2d(0x98)) / 0x8) +
-        (-parseInt(_0x384a2d(0x91)) / 0x9) *
-          (-parseInt(_0x384a2d(0x95)) / 0xa) +
-        (parseInt(_0x384a2d(0xa4)) / 0xb) * (parseInt(_0x384a2d(0xa1)) / 0xc) +
-        parseInt(_0x384a2d(0x92)) / 0xd;
-      if (_0x45baa1 === _0x8d0e7a) break;
-      else _0x23a82d['push'](_0x23a82d['shift']());
-    } catch (_0x999efa) {
-      _0x23a82d['push'](_0x23a82d['shift']());
+      const _0x559959 =
+        parseInt(_0x7f1faa(0xdb)) / 0x1 +
+        (-parseInt(_0x7f1faa(0xec)) / 0x2) *
+          (-parseInt(_0x7f1faa(0xdc)) / 0x3) +
+        (-parseInt(_0x7f1faa(0xe5)) / 0x4) * (parseInt(_0x7f1faa(0xed)) / 0x5) +
+        parseInt(_0x7f1faa(0xdd)) / 0x6 +
+        parseInt(_0x7f1faa(0xd6)) / 0x7 +
+        parseInt(_0x7f1faa(0xe2)) / 0x8 +
+        (-parseInt(_0x7f1faa(0xd7)) / 0x9) * (parseInt(_0x7f1faa(0xe6)) / 0xa);
+      if (_0x559959 === _0x39fa19) break;
+      else _0x484bd9['push'](_0x484bd9['shift']());
+    } catch (_0x67020c) {
+      _0x484bd9['push'](_0x484bd9['shift']());
     }
   }
-})(_0x3526, 0x59d4c),
-  alert(
-    'Param\x20Gaming\x20Auto\x20Claimer\x20–\x20HappyCuanAirdrop\x0aSubscribe:\x20https://t.me/HappyCuanAirdrop'
-  );
-function _0x3526() {
-  const _0x3173b3 = [
-    '2785xxjdUv',
-    'bang',
-    '12VaDMTq',
-    'Please\x20enter\x20your\x20authorization\x20token:',
-    'log',
-    '3623917angEgJ',
-    'Error\x20in\x20Fetch\x20Quests:\x20',
-    '1vXvWrU',
-    'stringify',
-    'taskId',
-    '629850Kmdwvl',
-    'json',
-    'application/json',
-    '4866dXmkyW',
-    'Error\x20in\x20Clear\x20Quest:',
-    '14TSlGeX',
-    '982539Vqomkm',
-    '11603813kBPqBU',
-    'https://paramgaming.com/api/v1/user/executeTask',
-    'Claim\x20task\x20success\x20for\x20task\x20ID:',
-    '20vUetYv',
-    'https://paramgaming.com/api/v1/user/claimTaskRewards',
-    '91347VSYrjP',
-    '735976ZXPPNo',
-    'https://paramgaming.com/api/v1/user/getUserTasks',
-    'taskCompleted',
-    'Error\x20in\x20Claim\x20Quest:\x20',
-    'POST',
-    'data',
-    '16XSKuuv',
-  ];
-  _0x3526 = function () {
-    return _0x3173b3;
-  };
-  return _0x3526();
-}
-const accessToken = prompt(_0x19556b(0xa2));
+})(_0x593f, 0x222ae),
+  alert(_0x1e62b4(0xe8));
+const accessToken = prompt(_0x1e62b4(0xde));
 async function fetchQuests() {
-  const _0x245e4d = _0x19556b;
+  const _0x3b6b65 = _0x1e62b4;
   try {
     if (!accessToken) {
-      console[_0x245e4d(0xa3)]('Authorization\x20token\x20is\x20required.');
+      console[_0x3b6b65(0xeb)](_0x3b6b65(0xd9));
       return;
     }
-    const _0x3f6af5 = await fetch(_0x245e4d(0x99), {
-        method: _0x245e4d(0x9c),
+    const _0x486378 = await fetch(_0x3b6b65(0xe1), {
+        method: _0x3b6b65(0xe0),
         headers: {
           Cookie: '',
-          'Content-Type': 'application/json',
+          'Content-Type': _0x3b6b65(0xd4),
           Authorization: accessToken,
         },
-        body: JSON['stringify']({}),
+        body: JSON[_0x3b6b65(0xd5)]({}),
       }),
-      _0x27f894 = await _0x3f6af5[_0x245e4d(0xaa)]();
-    console[_0x245e4d(0xa3)](_0x27f894, _0x245e4d(0xa0));
-    const _0x4a82a1 = _0x27f894[_0x245e4d(0x9d)]['filter'](
-      (_0x384033) => !_0x384033[_0x245e4d(0x9a)] && !_0x384033['taskClaimed']
-    );
-    for (const _0x5c6bdd of _0x4a82a1) {
-      await clearQuest(_0x5c6bdd[_0x245e4d(0xa8)]),
-        await claimQuest(_0x5c6bdd['taskId']);
+      _0x1ed397 = await _0x486378[_0x3b6b65(0xe4)](),
+      _0x2a904e = _0x1ed397[_0x3b6b65(0xdf)][_0x3b6b65(0xd8)](
+        (_0x2be7b8) =>
+          !_0x2be7b8[_0x3b6b65(0xea)] && !_0x2be7b8[_0x3b6b65(0xe7)]
+      );
+    for (const _0x745eb0 of _0x2a904e) {
+      await clearQuest(_0x745eb0['taskId']),
+        await claimQuest(_0x745eb0[_0x3b6b65(0xda)]);
     }
     alert('All\x20tasks\x20claimed\x20successfully!');
-  } catch (_0x5c3a91) {
-    console[_0x245e4d(0xa3)](_0x245e4d(0xa5) + _0x5c3a91);
+  } catch (_0xb27c85) {
+    console['log']('Error\x20in\x20Fetch\x20Quests:\x20' + _0xb27c85);
   }
 }
-function _0x351a(_0x2e43eb, _0x1b229c) {
-  const _0x352684 = _0x3526();
+function _0x593f() {
+  const _0x15610c = [
+    'data',
+    'POST',
+    'https://paramgaming.com/api/v1/user/getUserTasks',
+    '1601856QYAsdD',
+    'Error\x20in\x20Clear\x20Quest:',
+    'json',
+    '4tILiKG',
+    '300XSDEsK',
+    'taskClaimed',
+    'Param\x20Gaming\x20Auto\x20Claimer\x20–\x20HappyCuanAirdrop\x0aSubscribe:\x20https://t.me/HappyCuanAirdrop',
+    'Error\x20in\x20Claim\x20Quest:\x20',
+    'taskCompleted',
+    'log',
+    '3788jnJEvn',
+    '880135woyHpl',
+    'https://paramgaming.com/api/v1/user/executeTask',
+    'Clear\x20task\x20success\x20for\x20task\x20ID:',
+    'application/json',
+    'stringify',
+    '1762663fVzAej',
+    '232992jZYHMp',
+    'filter',
+    'Authorization\x20token\x20is\x20required.',
+    'taskId',
+    '197569SQoEVb',
+    '381hhAxky',
+    '1214814HFvtmW',
+    'Please\x20enter\x20your\x20authorization\x20token:',
+  ];
+  _0x593f = function () {
+    return _0x15610c;
+  };
+  return _0x593f();
+}
+async function clearQuest(_0x8f11fa) {
+  const _0x3aac1a = _0x1e62b4;
+  try {
+    const _0x4083e7 = await fetch(_0x3aac1a(0xd2), {
+      method: _0x3aac1a(0xe0),
+      body: JSON[_0x3aac1a(0xd5)]({ taskId: _0x8f11fa }),
+      headers: { Authorization: accessToken, 'Content-Type': _0x3aac1a(0xd4) },
+    });
+    console[_0x3aac1a(0xeb)](_0x3aac1a(0xd3), _0x8f11fa);
+  } catch (_0x4bae50) {
+    console[_0x3aac1a(0xeb)](_0x3aac1a(0xe3), _0x4bae50);
+  }
+}
+function _0x5dd1(_0x2c985a, _0x1dd3c1) {
+  const _0x593f20 = _0x593f();
   return (
-    (_0x351a = function (_0x351a30, _0x41b370) {
-      _0x351a30 = _0x351a30 - 0x8d;
-      let _0x1b8be = _0x352684[_0x351a30];
-      return _0x1b8be;
+    (_0x5dd1 = function (_0x5dd1df, _0x56b376) {
+      _0x5dd1df = _0x5dd1df - 0xd2;
+      let _0x304642 = _0x593f20[_0x5dd1df];
+      return _0x304642;
     }),
-    _0x351a(_0x2e43eb, _0x1b229c)
+    _0x5dd1(_0x2c985a, _0x1dd3c1)
   );
 }
-async function clearQuest(_0x4b4bd5) {
-  const _0x1e7a41 = _0x19556b;
+async function claimQuest(_0x27e2d7) {
+  const _0x3e6c70 = _0x1e62b4;
   try {
-    const _0x2acd74 = await fetch(_0x1e7a41(0x93), {
-      method: _0x1e7a41(0x9c),
-      body: JSON['stringify']({ taskId: _0x4b4bd5 }),
-      headers: {
-        Authorization: accessToken,
-        'Content-Type': 'application/json',
-      },
-    });
-    console['log']('Clear\x20task\x20success\x20for\x20task\x20ID:', _0x4b4bd5);
-  } catch (_0x454a5c) {
-    console[_0x1e7a41(0xa3)](_0x1e7a41(0x8f), _0x454a5c);
-  }
-}
-async function claimQuest(_0x4cbe6d) {
-  const _0xf28003 = _0x19556b;
-  try {
-    const _0x5b8553 = await fetch(_0xf28003(0x96), {
-      method: _0xf28003(0x9c),
-      headers: { Authorization: accessToken, 'Content-Type': _0xf28003(0x8d) },
-      body: JSON[_0xf28003(0xa7)]({ taskId: _0x4cbe6d }),
-    });
-    console[_0xf28003(0xa3)](_0xf28003(0x94), _0x4cbe6d);
-  } catch (_0x49bf47) {
-    console[_0xf28003(0xa3)](_0xf28003(0x9b), _0x49bf47);
+    const _0x58cea7 = await fetch(
+      'https://paramgaming.com/api/v1/user/claimTaskRewards',
+      {
+        method: _0x3e6c70(0xe0),
+        headers: {
+          Authorization: accessToken,
+          'Content-Type': _0x3e6c70(0xd4),
+        },
+        body: JSON[_0x3e6c70(0xd5)]({ taskId: _0x27e2d7 }),
+      }
+    );
+    console[_0x3e6c70(0xeb)](
+      'Claim\x20task\x20success\x20for\x20task\x20ID:',
+      _0x27e2d7
+    );
+  } catch (_0x3f660d) {
+    console[_0x3e6c70(0xeb)](_0x3e6c70(0xe9), _0x3f660d);
   }
 }
 fetchQuests();
