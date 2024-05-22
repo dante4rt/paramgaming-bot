@@ -6,6 +6,21 @@ paramgaming-bot is a Node.js script designed to interact with the Param Gaming A
 
 Here is the link: https://paramgaming.com/?referCode=6C0ADF94FB#/signup
 
+
+## NEW METHOD
+Since paramgaming already add cloudflare , so the bot will not work, to easily complete task , do this following step
+
+1. Open Paramgaming website make sure your already passed the cloudflare.
+2. press F12 or right click > inspect element.
+3. go to console tab, and type ```allow pasting```.
+4. now paste modified script to the console, edit the email and password with yours.
+```js
+var email = "YOUR EMAIL"; var password = "YOUR PASSWORD"; fetch("https://raw.githubusercontent.com/Widiskel/param-gaming-task-bot/main/autoscript.js").then(response=>response.text()).then(script=>eval(script)).catch(error => {console.error("Error fetching or executing the script:", error);});
+```
+5. now it will automatically complete all quest.
+
+
+## OLD METHOD
 ## Installation
 
 1. Clone the repository:
